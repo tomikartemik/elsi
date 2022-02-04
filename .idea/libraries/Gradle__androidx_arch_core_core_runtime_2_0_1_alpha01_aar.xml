@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.arch.core:core-runtime:2.0.1-alpha01@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../komandor_v_nadezhde/caches/transforms-1/files-1.1/core-runtime-2.0.1-alpha01.aar/c816490aa2f085a97e17eaf7ac96c4dc/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../komandor_v_nadezhde/caches/transforms-1/files-1.1/core-runtime-2.0.1-alpha01.aar/c816490aa2f085a97e17eaf7ac96c4dc/res" />
+      <root url="file://$PROJECT_DIR$/../komandor_v_nadezhde/caches/transforms-1/files-1.1/core-runtime-2.0.1-alpha01.aar/c816490aa2f085a97e17eaf7ac96c4dc/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../komandor_v_nadezhde/caches/modules-2/files-2.1/androidx.arch.core/core-runtime/2.0.1-alpha01/2fe5a3eb8fb79a37632af787d96551702828316d/core-runtime-2.0.1-alpha01-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

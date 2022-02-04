@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.lifecycle:lifecycle-extensions:2.1.0-alpha01@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../komandor_v_nadezhde/caches/transforms-1/files-1.1/lifecycle-extensions-2.1.0-alpha01.aar/72a58eab6609167965f8aa03e22966a1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../komandor_v_nadezhde/caches/transforms-1/files-1.1/lifecycle-extensions-2.1.0-alpha01.aar/72a58eab6609167965f8aa03e22966a1/res" />
+      <root url="file://$PROJECT_DIR$/../komandor_v_nadezhde/caches/transforms-1/files-1.1/lifecycle-extensions-2.1.0-alpha01.aar/72a58eab6609167965f8aa03e22966a1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../komandor_v_nadezhde/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-extensions/2.1.0-alpha01/bcdae018eccaf35b1fe66202c715b0c6d93a1fed/lifecycle-extensions-2.1.0-alpha01-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

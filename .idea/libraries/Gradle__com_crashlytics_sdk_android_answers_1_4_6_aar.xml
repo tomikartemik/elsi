@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.crashlytics.sdk.android:answers:1.4.6@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../komandor_v_nadezhde/caches/transforms-1/files-1.1/jetified-answers-1.4.6.aar/7e34256964a9c313cd16283cf9dd20ba/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../komandor_v_nadezhde/caches/transforms-1/files-1.1/jetified-answers-1.4.6.aar/7e34256964a9c313cd16283cf9dd20ba/res" />
+      <root url="file://$PROJECT_DIR$/../komandor_v_nadezhde/caches/transforms-1/files-1.1/jetified-answers-1.4.6.aar/7e34256964a9c313cd16283cf9dd20ba/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

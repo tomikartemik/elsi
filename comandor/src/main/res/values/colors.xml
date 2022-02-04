@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#174e47</color>
+    <color name="colorPrimaryDark">#002520</color>
+    <color name="colorPrimaryLight">#467a72</color>
+    <color name="colorSecondary">#447f37</color>
+    <color name="colorSecondaryDark">#12520b</color>
+    <color name="colorSecondaryLight">#73af63</color>
+    <color name="colorAccent">#4c8760</color>
+
+    <color name="textColorPrimary">#de000000</color>
+    <color name="textColorPrimaryLight">#99000000</color>
+    <color name="textColorSecondary">#deFFFFFF</color>
+
+    <color name="subBackground">#104b37</color>
+    <color name="mainBackground">#174e47</color>
+    <color name="subText">#ffffff</color>
+    <color name="colorLinkText">#2c69d1</color>
+    <color name="modalBackground">#55000000</color>
+
+    <color name="colorContactMessage">#4473af63</color>
+    <color name="colorUserMessage">#110a0a0a</color>
+
+    <color name="colorError">#ffb00020</color>
+
+    <color name="mockColor">#1e000000</color>
+
+    <color name="disabledColor">#bcbcbc</color>
+</resources>

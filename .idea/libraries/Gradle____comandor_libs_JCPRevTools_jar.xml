@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./comandor/libs/JCPRevTools.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/comandor/libs/JCPRevTools.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

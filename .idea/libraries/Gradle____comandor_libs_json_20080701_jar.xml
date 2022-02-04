@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./comandor/libs/json-20080701.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/comandor/libs/json-20080701.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

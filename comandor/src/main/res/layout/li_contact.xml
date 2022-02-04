@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ContactBinding">
+
+        <variable
+            name="V"
+            type="android.view.View" />
+
+        <variable
+            name="contact"
+            type="com.komandor.komandor.ui.main.contacts.ContactItemViewModel" />
+
+        <variable
+            name="onItemClickListener"
+            type="com.komandor.komandor.ui.main.contacts.ContactsAdapter.OnContactItemClickListener" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="64dp"
+        android:orientation="horizontal"
+        android:onClick="@{() -> onItemClickListener.onContactItemClick(contact.id)}">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{contact.upperString}"
+                android:textAppearance="@style/AppTheme.TextAppearance.ListItemPrimaryText"
+                tools:text="Имя" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@{contact.lowerString}"
+                android:textAppearance="@style/AppTheme.TextAppearance.ListItemSecondaryText"
+                tools:text="Имя" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/contact_logo"
+            android:visibility="@{contact.isKomandor ? V.VISIBLE : V.GONE}" />
+    </LinearLayout>
+</layout>

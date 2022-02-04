@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">554629864542-2bn9efpjle00uvg2v7geiceqjgsirgbo.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">554629864542</string>
+    <string name="google_api_key" translatable="false">AIzaSyCNiZ7rrzZTbcg-_SQvf6BJHsX_IXKqPvY</string>
+    <string name="google_app_id" translatable="false">1:554629864542:android:8cbf711624e729945ba8cf</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCNiZ7rrzZTbcg-_SQvf6BJHsX_IXKqPvY</string>
+    <string name="google_storage_bucket" translatable="false">komador-50e24.appspot.com</string>
+    <string name="project_id" translatable="false">komador-50e24</string>
+</resources>

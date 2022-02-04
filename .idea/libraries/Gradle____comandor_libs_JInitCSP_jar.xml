@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./comandor/libs/JInitCSP.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/comandor/libs/JInitCSP.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

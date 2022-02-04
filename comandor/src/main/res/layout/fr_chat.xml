@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data class="ChatBinding">
+
+        <import
+            alias="V"
+            type="android.view.View" />
+
+        <variable
+            name="vm"
+            type="com.komandor.komandor.ui.chat.ChatViewModel" />
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="@{vm.isLoading ? V.GONE : V.VISIBLE}">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_chat_messages_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"
+                    android:scrollbars="vertical"
+                    android:visibility="@{vm.messages.size() > 0 ? V.VISIBLE : V.GONE}"
+                    bind:clickHandler="@{vm.onMessageItemClickListener}"
+                    bind:downloadFileClickHandler="@{vm.onDownloadFileClickListener}"
+                    bind:data="@{vm.messages}" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/no_messages_yet"
+                    android:textAlignment="center"
+                    android:visibility="@{vm.messages.size() > 0 ? V.GONE : V.VISIBLE}" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="@{vm.isLoading ? V.VISIBLE : V.GONE}">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/attach_file"
+                android:onClick="@{vm.onSendFileClickListener}"
+                android:src="@drawable/ic_add_24px" />
+
+            <EditText
+                android:id="@+id/et_chat_message_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/message_text"
+                android:inputType="textLongMessage"
+                android:nextFocusLeft="@id/et_chat_message_input"
+                android:nextFocusUp="@id/et_chat_message_input"
+                android:text="@={vm.messageText}" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/send_message"
+                android:onClick="@{() -> vm.sendMessage()}"
+                android:src="@drawable/ic_send_24px" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

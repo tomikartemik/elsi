@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ReceivedFileBinding">
+
+        <import
+            alias="V"
+            type="android.view.View" />
+
+        <variable
+            name="message"
+            type="com.komandor.komandor.ui.chat.MessageItemViewModel" />
+
+        <variable
+            name="onMessageItemClickListener"
+            type="com.komandor.komandor.ui.chat.MessagesAdapter.OnMessageItemClickListener" />
+
+        <variable
+            name="onDownloadFileClickListener"
+            type="com.komandor.komandor.ui.chat.MessagesAdapter.OnDownloadFileClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> onMessageItemClickListener.onMessageItemClick(message.id, message.hasFile)}"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/message_avatar_size"
+            android:layout_height="@dimen/message_avatar_size"
+            android:contentDescription="Аватар"
+            android:src="@mipmap/ic_launcher_round"
+            android:visibility="@{message.isGrouped ? V.INVISIBLE : V.VISIBLE}"
+            tools:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                bind:background="@{message.isGrouped ? @drawable/received_message_group : @drawable/received_message}">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/ic_file_24px"
+                    app:tint="#fff"
+                    bind:backgroundTint="@color/colorSecondaryLight"
+                    bind:elevation="0dp"
+                    android:onClick="@{() -> onDownloadFileClickListener.onDownloadFileClick(message.getLocalFileID())}"
+                    bind:fabSize="mini" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="middle"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@{message.message}"
+                        tools:text="filename.ext" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="999 KB"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/messageItemTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@{message.date}"
+                android:textAppearance="@style/AppTheme.TextAppearance.ListItemSecondaryText.VerySmall"
+                tools:text="9:20" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

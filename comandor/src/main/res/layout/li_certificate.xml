@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="CertificateBinding">
+
+        <import
+            alias="V"
+            type="android.view.View" />
+
+        <import
+            alias="G"
+            type="android.view.Gravity" />
+
+        <variable
+            name="certificate"
+            type="com.komandor.komandor.ui.auth.cert_list.CertListItemViewModel" />
+
+        <variable
+            name="onItemClickListener"
+            type="com.komandor.komandor.ui.auth.cert_list.CertListAdapter.OnCertificateItemClickListener" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/root_certificate_li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="64dp"
+        android:onClick="@{()->onItemClickListener.onCertificateItemClick(certificate.alias)}"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/tv_cert_li_upper_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="@{certificate.isCompany ? G.BOTTOM : G.CENTER_VERTICAL}"
+            android:text="@{certificate.isCompany ? certificate.companyName : certificate.clientName}"
+            android:textAppearance="@style/AppTheme.TextAppearance.ListItemPrimaryText"
+            tools:text="Длинный текст" />
+
+        <TextView
+            android:id="@+id/tv_cert_li_lower_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:text="@{certificate.clientName}"
+            android:textAppearance="@style/AppTheme.TextAppearance.ListItemSecondaryText"
+            android:visibility="@{certificate.isCompany ? V.VISIBLE : V.GONE}"
+            tools:text="Длинный текст" />
+
+    </LinearLayout>
+</layout>

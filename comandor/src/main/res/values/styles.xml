@@ -1,0 +1,51 @@
+<resources>
+
+    <style name="AppTheme" parent="Base.Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textColorPrimary">@color/textColorPrimary</item>
+        <item name="textColorPrimaryLight">@color/textColorPrimaryLight</item>
+        <item name="textColorSecondary">@color/textColorSecondary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.SplashScreen" parent="AppTheme.NoActionBar">
+        <item name="android:colorBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Widgets"/>
+
+    <style name="AppTheme.TextAppearance">
+    </style>
+
+    <style name="AppTheme.TextAppearance.ListItemPrimaryText">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.ListItemSecondaryText">
+        <item name="android:textColor">@color/textColorPrimaryLight</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.ListItemSecondaryText.Small">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.ListItemSecondaryText.VerySmall">
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.MaterialComponents.Button">
+    </style>
+
+    <style name="AppTheme.Button.Error">
+        <item name="backgroundTint">@color/colorError</item>
+    </style>
+
+</resources>

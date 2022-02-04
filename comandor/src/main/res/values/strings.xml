@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Командор</string>
+
+    <string name="startInfoDescription">Безопасное общение с контрагентами</string>
+    <string name="startInfoCertificateLoadInfo">Для продолжения работы</string>
+    <string name="startInfoCertificateLoadButton">загрузите сертификат</string>
+    <string name="startInfoGetCertificateButton">Получить сертификат ЭП</string>
+    <string name="certListTitle">Выбор сертификата</string>
+    <string name="noCertificates">Нет сертификатов</string>
+
+    <string name="registration_title">Регистрация номера</string>
+    <string name="authPhoneNumber">Номер телефона</string>
+    <string name="authPhoneNumberHint">+7 (999) 999–99–99</string>
+    <string name="get_code">Получить код</string>
+    <string name="get_code_again">Получить код еще раз</string>
+    <string name="authCode">Код</string>
+    <string name="authTypeCode">Введите код из СМС</string>
+    <string name="check_code">Проверить код</string>
+
+    <string name="password">Пароль</string>
+    <string name="login">Войти</string>
+    <string name="selected_certificate">Выбранный сертификат</string>
+    <string name="cert_validation_title">Проверка сертификата</string>
+
+    <string name="er_wrong_phone_number">Неверный номер телефона</string>
+    <string name="er_wrong_sms_code">Неверный код</string>
+    <string name="er_wrong_password">Неправильный пароль</string>
+
+    <string name="nav_bar_title_chats">Чаты</string>
+    <string name="nav_bar_title_contacts">Контакты</string>
+    <string name="nav_bar_title_profile">Профиль</string>
+
+    <string name="log_out">Выйти</string>
+    <string name="load_photo">Загрузить фото</string>
+    <string name="surname">Фамилия</string>
+    <string name="patronymic">Отчество</string>
+    <string name="SNILS">СНИЛС</string>
+    <string name="company">Компания</string>
+    <string name="OGRN">ОГРН</string>
+    <string name="INN">ИНН</string>
+    <string name="phone">Телефон</string>
+    <string name="crypro_pro_license">Лицензия КриптоПро</string>
+    <string name="name">Имя</string>
+    <string name="email">E-mail</string>
+    <string name="title">Должность</string>
+
+    <string name="write_message">Написать сообщение</string>
+    <string name="perm_request_contacts">Для получения списка контактов нужно разрешение на просмотр контактов</string>
+
+    <string name="no_messages">Нет сообщений</string>
+    <string name="perm_request_chats">Для получения списка чатов нужно разрешение на просмотр контактов</string>
+
+    <string name="message_text">Текст сообщения</string>
+    <string name="send_message">Отправить сообщение</string>
+    <string name="attach_file">Прикрепить файл</string>
+    <string name="no_messages_yet">У вас пока нет сообщений</string>
+
+    <string name="verify_sign">Проверить электр. подпись</string>
+    <string name="download_file">Скачать файл</string>
+    <string name="open_file_folder">Открыть папку с файлом</string>
+
+    <string name="sign_is_verified">Подпись верна</string>
+    <string name="sign_is_verified_description">Подпись для этого файла верна. Сохранить файл?</string>
+
+    <string name="sign_is_not_verified">Подпись неверна</string>
+    <string name="sign_is_not_verified_description">Подпись для этого файла неверна. Все равно сохранить файл?</string>
+    <string name="save">Сохранить</string>
+    <string name="no_save">Не сохранять</string>
+</resources>

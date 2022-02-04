@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\li_sent_message.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\li_sent_message.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fr_profile.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\fr_profile.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\li_contact.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\li_contact.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fr_message_info_file.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\fr_message_info_file.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\li_received_message.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\li_received_message.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\li_sent_file.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\li_sent_file.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fr_message_info_default.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\fr_message_info_default.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\li_chat.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\li_chat.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fr_contacts.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\fr_contacts.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fr_registration.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\fr_registration.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fr_contact_info.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\fr_contact_info.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\li_certificate.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\li_certificate.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fr_chats.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\fr_chats.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\li_received_file.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\li_received_file.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fr_certificate_validation.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\fr_certificate_validation.xml"
+    },
+    {
+        "merged": "D:\\komandor_restored\\comandor\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fr_chat.xml",
+        "source": "D:\\komandor_restored\\comandor\\src\\main\\res\\layout\\fr_chat.xml"
+    }
+]

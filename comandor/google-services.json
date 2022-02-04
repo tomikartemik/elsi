@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "554629864542",
+    "project_id": "komador-50e24",
+    "storage_bucket": "komador-50e24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554629864542:android:8cbf711624e729945ba8cf",
+        "android_client_info": {
+          "package_name": "com.komandor.komandor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554629864542-kuhtnj0kt9d1emp1acd8nrvsrpjifh2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.komandor.komandor",
+            "certificate_hash": "e7d34730101b0db1e76f7df2d34a8981b31ac9c5"
+          }
+        },
+        {
+          "client_id": "554629864542-2bn9efpjle00uvg2v7geiceqjgsirgbo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNiZ7rrzZTbcg-_SQvf6BJHsX_IXKqPvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554629864542-2bn9efpjle00uvg2v7geiceqjgsirgbo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
