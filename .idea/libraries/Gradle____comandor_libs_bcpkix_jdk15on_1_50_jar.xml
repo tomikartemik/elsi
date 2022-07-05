@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: ./comandor/libs/bcpkix-jdk15on-1.50.jar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/comandor/libs/bcpkix-jdk15on-1.50.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

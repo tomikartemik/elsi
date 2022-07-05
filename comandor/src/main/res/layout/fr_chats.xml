@@ -1,48 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:bind="http://schemas.android.com/apk/res-auto">
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
 
-    <data class="ChatsBinding">
+    >
 
-        <import
-            alias="V"
-            type="android.view.View" />
 
-        <variable
-            name="vm"
-            type="com.komandor.komandor.ui.main.chats.ChatsViewModel" />
-
-    </data>
-
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cvList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        bind:onRefreshListener="@{vm.onRefreshListener}"
-        bind:refreshing="@{vm.isLoading}"
         >
 
-        <FrameLayout
+        <TextView
+
+            android:id="@+id/tv_caption"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/default_padding"
+            android:text="@string/certificate_list_caption"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="@{vm.hasPermissions ? V.VISIBLE : V.GONE}"
-                bind:data="@{vm.chats}"
-                bind:clickHandler="@{vm.onChatItemClickListener}"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/perm_request_chats"
-                android:layout_marginStart="@dimen/default_padding"
-                android:layout_marginEnd="@dimen/default_padding"
-                android:textAlignment="center"
-                android:layout_gravity="center_vertical"
-                android:visibility="@{vm.hasPermissions ? V.GONE : V.VISIBLE}"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_caption"
 
 
-        </FrameLayout>
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-</layout>
+            />
+
+        <TextView
+
+            android:id="@+id/tv_cert_list_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/default_padding"
+            android:text="@string/noCertificates"
+
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: ./comandor/libs/httpcore-4.2.jar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/comandor/libs/httpcore-4.2.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

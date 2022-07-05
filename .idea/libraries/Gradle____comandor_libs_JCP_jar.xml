@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: ./comandor/libs/JCP.jar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/comandor/libs/JCP.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

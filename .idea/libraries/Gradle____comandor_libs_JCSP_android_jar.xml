@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: ./comandor/libs/JCSP-android.jar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/comandor/libs/JCSP-android.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

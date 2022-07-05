@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: ./comandor/libs/cmsutil.jar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/comandor/libs/cmsutil.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

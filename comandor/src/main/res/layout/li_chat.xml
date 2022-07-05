@@ -1,80 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="64dp"
+    android:orientation="horizontal"
 
-    <data class="ChatItemBinding">
+    >
 
-        <import
-            alias="V"
-            type="android.view.View" />
-
-        <variable
-            name="onItemClickListener"
-            type="com.komandor.komandor.ui.main.chats.ChatsAdapter.OnChatItemClickListener" />
-
-        <variable
-            name="chat"
-            type="com.komandor.komandor.ui.main.chats.ChatItemViewModel" />
-    </data>
+    <ImageView
+        android:id="@+id/chatsFragmentAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="avatar"
+        android:src="@mipmap/ic_launcher_round" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:minHeight="64dp"
-        android:orientation="horizontal"
-        android:onClick="@{() -> onItemClickListener.onChatItemClick(chat.chatID)}">
-
-        <ImageView
-            android:id="@+id/chatsFragmentAvatar"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="16dp"
-            android:contentDescription="avatar"
-            android:src="@mipmap/ic_launcher_round" />
-
-        <LinearLayout
-            android:id="@+id/constraintLayout"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/chatsListItemName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ellipsize="end"
-                android:lines="1"
-                android:scrollHorizontally="true"
-                android:text="@{chat.name}"
-                android:textAppearance="@style/AppTheme.TextAppearance.ListItemPrimaryText"
-                tools:text="Текст" />
-
-            <TextView
-                android:id="@+id/chatsListItemLastMessage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ellipsize="end"
-                android:lines="1"
-                android:scrollHorizontally="true"
-                android:text="@{chat.lastMessage}"
-                android:textAppearance="@style/AppTheme.TextAppearance.ListItemSecondaryText" />
-
-        </LinearLayout>
-
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/chatsListItemBadge"
-            android:layout_width="wrap_content"
+            android:id="@+id/chatsListItemName"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/badge"
-            android:text="@{chat.stringUnread}"
-            android:textColor="@color/textColorSecondary"
-            android:visibility="@{chat.unread > 0 ? V.VISIBLE : V.GONE}" />
+            android:ellipsize="end"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:textAppearance="@style/AppTheme.TextAppearance.ListItemPrimaryText"
+            tools:text="Текст" />
+        <TextView
+            android:id="@+id/chatsListItemprofileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:textAppearance="@style/AppTheme.TextAppearance.ListItemPrimaryText"
+            tools:text="Текст" />
+        <TextView
+            android:id="@+id/chatsListItemprofileTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:textAppearance="@style/AppTheme.TextAppearance.ListItemPrimaryText"
+            tools:text="Текст" />
+
+        <TextView
+            android:id="@+id/chatsListItemprofileCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:textAppearance="@style/AppTheme.TextAppearance.ListItemPrimaryText"
+            tools:text="Текст" />
+        <TextView
+            android:id="@+id/chatsListItemLastMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:text="lastMessage"
+            android:textAppearance="@style/AppTheme.TextAppearance.ListItemSecondaryText" />
 
     </LinearLayout>
-</layout>
+
+
+    <TextView
+        android:id="@+id/chatsListItemBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/badge"
+        android:text="stringUnread"
+        android:textColor="@color/textColorSecondary"
+
+        />
+
+</LinearLayout>

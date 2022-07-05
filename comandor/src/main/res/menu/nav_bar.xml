@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_chats"
+        android:id="@+id/chatsFragment"
         android:icon="@drawable/ic_chats_24px"
         android:title="@string/nav_bar_title_chats"
         />
 
     <item
-        android:id="@+id/navigation_contacts"
+        android:id="@+id/contactsFragment"
         android:icon="@drawable/ic_contacts_24px"
-        android:title="@string/nav_bar_title_contacts"
+        android:title="@string/folders"
         />
 
     <item
-        android:id="@+id/navigation_profile"
+        android:id="@+id/profileFragment"
         android:icon="@drawable/ic_profile_24px"
         android:title="@string/nav_bar_title_profile"
         />

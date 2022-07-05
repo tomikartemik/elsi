@@ -1,98 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:bind="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <data class="SentFileBinding">
-
-        <import
-            alias="V"
-            type="android.view.View" />
-
-        <variable
-            name="message"
-            type="com.komandor.komandor.ui.chat.MessageItemViewModel" />
-
-        <variable
-            name="onMessageItemClickListener"
-            type="com.komandor.komandor.ui.chat.MessagesAdapter.OnMessageItemClickListener" />
-
-        <variable
-            name="onDownloadFileClickListener"
-            type="com.komandor.komandor.ui.chat.MessagesAdapter.OnDownloadFileClickListener" />
-    </data>
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:orientation="horizontal">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="end"
-        android:onClick="@{() -> onMessageItemClickListener.onMessageItemClick(message.id, message.hasFile)}"
         android:orientation="horizontal">
 
-        <LinearLayout
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_clock_24px"
+
+            />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginEnd="8dp"
+            android:text="date"
+            android:textAppearance="@style/AppTheme.TextAppearance.ListItemSecondaryText.VerySmall"
+            tools:text="9:20" />
 
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/ic_clock_24px"
-                android:visibility="@{message.isSent ? V.INVISIBLE : V.VISIBLE}" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            bind:background="@drawable/sent_message">
 
-            <TextView
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:text="@{message.date}"
-                android:textAppearance="@style/AppTheme.TextAppearance.ListItemSecondaryText.VerySmall"
-                tools:text="9:20" />
+                android:layout_marginEnd="5dp"
+                android:foregroundTint="#fff"
+                app:srcCompat="@drawable/ic_file_24px"
+                app:tint="#fff"
+                bind:backgroundTint="@color/colorSecondaryLight"
+                bind:elevation="0dp"
+                bind:fabSize="mini" />
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                bind:background="@{message.isGrouped ? @drawable/sent_message_group : @drawable/sent_message}">
+                android:orientation="vertical">
 
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="5dp"
-                    android:foregroundTint="#fff"
-                    android:onClick="@{() -> onDownloadFileClickListener.onDownloadFileClick(message.getLocalFileID())}"
-                    app:srcCompat="@drawable/ic_file_24px"
-                    app:tint="#fff"
-                    bind:backgroundTint="@color/colorSecondaryLight"
-                    bind:elevation="0dp"
-                    bind:fabSize="mini" />
+                    android:ellipsize="middle"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="message"
+                    tools:text="filename.ext" />
 
-                <LinearLayout
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ellipsize="middle"
-                        android:scrollHorizontally="true"
-                        android:singleLine="true"
-                        android:text="@{message.message}"
-                        tools:text="filename.ext" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="999 KB" />
-                </LinearLayout>
+                    android:text="999 KB" />
             </LinearLayout>
         </LinearLayout>
-
-
     </LinearLayout>
-</layout>
+
+
+</LinearLayout>

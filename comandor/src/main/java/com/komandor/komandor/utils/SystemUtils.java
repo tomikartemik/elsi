@@ -13,9 +13,13 @@ import android.util.Base64;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.komandor.komandor.app.Constants;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -33,14 +37,14 @@ public class SystemUtils {
     window.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
   }
   
-  public static File saveFile(String fullFileName, byte[] data) {
+  public static File saveFile(String fullFileName, byte[] data) throws IOException {
     int dotIdx = fullFileName.lastIndexOf('.');
     String fileName = fullFileName.substring(0, dotIdx);
     String fileExt = fullFileName.substring(dotIdx);
     
     File rootFolder = new File(Constants.DOWNLOADS_FOLDER);
     if (!rootFolder.exists() && !rootFolder.mkdir()) {
-      Exception e = new KomandorException("Can not create downloads root folder!");
+      Exception e = new Exception("Can not create downloads root folder!");
       e.printStackTrace();
       return null;
     }
@@ -60,18 +64,11 @@ public class SystemUtils {
       return saveFile(fileName + "_1" + fileExt, data);
     }
     
-    
-    try {
       FileOutputStream outputStream = new FileOutputStream(file);
       outputStream.write(data);
       outputStream.close();
       
       return file;
-    } catch (Exception e) {
-      new KomandorException(e).printStackTrace();
-    }
-    
-    return null;
   }
   
   public static void deleteFile(File fileOrDirectory, Boolean clearDirContentOnly) {
@@ -232,22 +229,12 @@ public class SystemUtils {
     }
   }
   
-  public static String encodeBase64(byte[] data) throws KomandorException {
-    try {
+  public static String encodeBase64(byte[] data) {
       return new String(Base64.encode(data, Base64.NO_WRAP));
-    } catch (Exception e) {
-      throw new KomandorException(e);
-    }
   }
   
   public static byte[] decodeBase64(String data) {
-    try {
       return Base64.decode(data, Base64.NO_WRAP);
-    } catch (Exception e) {
-      e.printStackTrace();
-//      Crashlytics.logException(e);
-    }
-    return null;
   }
   
   public static Uri getImageUri(Context context, Bitmap image) {

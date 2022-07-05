@@ -1,41 +1,179 @@
 {
   "project_info": {
-    "project_number": "554629864542",
-    "project_id": "komador-50e24",
-    "storage_bucket": "komador-50e24.appspot.com"
+    "project_number": "36454318379",
+    "firebase_url": "https://massageprogect.firebaseio.com",
+    "project_id": "massageprogect",
+    "storage_bucket": "massageprogect.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:554629864542:android:8cbf711624e729945ba8cf",
+        "mobilesdk_app_id": "1:36454318379:android:de412ccd4c09b5fc76c56e",
         "android_client_info": {
-          "package_name": "com.komandor.komandor"
+          "package_name": "com.atom"
         }
       },
       "oauth_client": [
         {
-          "client_id": "554629864542-kuhtnj0kt9d1emp1acd8nrvsrpjifh2p.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.komandor.komandor",
-            "certificate_hash": "e7d34730101b0db1e76f7df2d34a8981b31ac9c5"
-          }
-        },
-        {
-          "client_id": "554629864542-2bn9efpjle00uvg2v7geiceqjgsirgbo.apps.googleusercontent.com",
+          "client_id": "36454318379-83irfibjnpbi155tjogli203bdgo0ls3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCNiZ7rrzZTbcg-_SQvf6BJHsX_IXKqPvY"
+          "current_key": "AIzaSyDL-LDZF8wTW_o29cORZBI_iyn3dTsMBpY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "554629864542-2bn9efpjle00uvg2v7geiceqjgsirgbo.apps.googleusercontent.com",
+              "client_id": "36454318379-83irfibjnpbi155tjogli203bdgo0ls3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36454318379:android:beaea7b854dba86276c56e",
+        "android_client_info": {
+          "package_name": "com.atomcompose"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36454318379-83irfibjnpbi155tjogli203bdgo0ls3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL-LDZF8wTW_o29cORZBI_iyn3dTsMBpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36454318379-83irfibjnpbi155tjogli203bdgo0ls3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36454318379:android:37861d5b4d889dd576c56e",
+        "android_client_info": {
+          "package_name": "com.komandor.komandor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36454318379-83irfibjnpbi155tjogli203bdgo0ls3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL-LDZF8wTW_o29cORZBI_iyn3dTsMBpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36454318379-83irfibjnpbi155tjogli203bdgo0ls3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36454318379:android:57ba345a27cc6198",
+        "android_client_info": {
+          "package_name": "ru.massagechoice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36454318379-83irfibjnpbi155tjogli203bdgo0ls3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL-LDZF8wTW_o29cORZBI_iyn3dTsMBpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36454318379-83irfibjnpbi155tjogli203bdgo0ls3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36454318379:android:b796c2776e435da8",
+        "android_client_info": {
+          "package_name": "ru.massageclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36454318379-83irfibjnpbi155tjogli203bdgo0ls3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL-LDZF8wTW_o29cORZBI_iyn3dTsMBpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36454318379-83irfibjnpbi155tjogli203bdgo0ls3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36454318379:android:8cb2224cb0bf1841",
+        "android_client_info": {
+          "package_name": "ru.massagesalon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36454318379-83irfibjnpbi155tjogli203bdgo0ls3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL-LDZF8wTW_o29cORZBI_iyn3dTsMBpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36454318379-83irfibjnpbi155tjogli203bdgo0ls3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

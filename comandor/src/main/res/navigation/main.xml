@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_new"
+    app:startDestination="@id/navPreloadingFragment"
+    >
+    <fragment
+        android:id="@+id/navPreloadingFragment"
+        android:name="com.komandor.komandor.ui.fragments.PreloadingFragment"
+        android:label="navPreloadingFragment" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="com.komandor.komandor.ui.fragments.ChatsFragment"
+        android:label="Чаты">
+
+        <argument
+            android:name="isBottomNav"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/startInfoFragment"
+        android:name="com.komandor.komandor.ui.fragments.StartInfoFragment"
+        android:label="StartInfoFragment" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.komandor.komandor.ui.fragments.AuthFragment"
+        android:label="AuthFragment" >
+
+        <argument
+            android:name="key"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.komandor.komandor.ui.fragments.RegistrationFragment"
+        android:label="RegistrationFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.komandor.komandor.ui.fragments.ProfileFragment"
+        android:label="ProfileFragment" >
+        <argument
+            android:name="isBottomNav"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.komandor.komandor.ui.fragments.ContactsFragment"
+        android:label="ContactsFragment" >
+        <argument
+            android:name="isBottomNav"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/certificateValidationFragment"
+        android:name="com.komandor.komandor.ui.fragments.CertificateValidationFragment"
+        android:label="CertificateValidationFragment" />
+    <fragment
+        android:id="@+id/messageListFragment"
+        android:name="com.komandor.komandor.ui.fragments.MessageListFragment"
+        android:label="MessageListFragment" >
+        <argument
+            android:name="chatId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

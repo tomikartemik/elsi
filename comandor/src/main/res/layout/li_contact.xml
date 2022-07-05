@@ -1,29 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools">
 
-    <data class="ContactBinding">
 
-        <variable
-            name="V"
-            type="android.view.View" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:minHeight="64dp"
+    android:orientation="horizontal"
 
-        <variable
-            name="contact"
-            type="com.komandor.komandor.ui.main.contacts.ContactItemViewModel" />
-
-        <variable
-            name="onItemClickListener"
-            type="com.komandor.komandor.ui.main.contacts.ContactsAdapter.OnContactItemClickListener" />
-
-    </data>
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:minHeight="64dp"
-        android:orientation="horizontal"
-        android:onClick="@{() -> onItemClickListener.onContactItemClick(contact.id)}">
+    >
 
         <LinearLayout
             android:layout_width="0dp"
@@ -36,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{contact.upperString}"
+                android:text="upperString"
                 android:textAppearance="@style/AppTheme.TextAppearance.ListItemPrimaryText"
                 tools:text="Имя" />
 
@@ -44,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
-                android:text="@{contact.lowerString}"
+                android:text="contact"
                 android:textAppearance="@style/AppTheme.TextAppearance.ListItemSecondaryText"
                 tools:text="Имя" />
         </LinearLayout>
@@ -53,7 +39,5 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginEnd="16dp"
-            android:src="@drawable/contact_logo"
-            android:visibility="@{contact.isKomandor ? V.VISIBLE : V.GONE}" />
+            android:src="@drawable/contact_logo" />
     </LinearLayout>
-</layout>

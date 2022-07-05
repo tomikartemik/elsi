@@ -5,15 +5,23 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
         maven {
             url 'https://maven.fabric.io/public'
         }
+        maven {
+            url = uri("https://plugins.gradle.org/m2/")
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
-        classpath 'com.google.gms:google-services:4.2.0'
-        classpath 'io.fabric.tools:gradle:1.26.1'
-        
+        classpath 'com.android.tools.build:gradle:7.2.0'
+        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.8.1'
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.4.2"
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.20"
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.41")
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -33,3 +41,54 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+
+    createHash = false
+
+    if (project.hasProperty('versionCode')) {
+        versionCode = Integer.parseInt(project.property('versionCode'))
+    }
+    else {
+        versionCode = 1
+    }
+
+    // Если есть доступ к репозиторию "http://build-jcp/jcp_rep",
+    // то нужно указывать номер актуальной ревизии.
+    // Можно указать пустую строку, если нет доступа к репозиторию
+    // или используется локальная сборка JCP.
+    revision = '2.0.42440-release-220216-java-csp'
+
+    ANDROID_VERSION='5.0'
+    ANDROID_NGATE_VERSION='1.0'
+
+    appCompatVersion = '1.4.0'
+    constraintLayoutVersion = '2.1.2'
+    lifecycleVersion = '2.4.0'
+    lifecycleExtensionsVersion = '2.2.0'
+    materialVersion = '1.4.0'
+    navigationVersion = '2.3.5'
+    preferenceVersion = '1.1.1'
+    broadcastmanagerVersion = '1.0.0'
+    //commonsLoggingVersion = '1.2'
+    commonsCodecVersion = '1.14'
+    recyclerviewVersion = '1.2.1'
+    swiperefreshlayoutVersion = '1.1.0'
+    jsonVersion = '20180813'
+    proguardVersion = '5.1'
+    ini4jVersion = '0.5.1'
+    asn1rtVersion = '5.74.0'
+    bouncycastleVersion = '1.60'
+    okhttpVersion = '4.8.0'
+    rtserviceconnectionVersion = '1.0.3'
+    pkcs11wrapper = '1.1.2'
+    jcpcscliteVersion = '1.1.0.57'
+    javaWebSocketVersion = '1.3.4'
+    httpclient5Version = '5.0'
+    serializerVersion = '2.7.2'
+    xalanVersion = '2.7.2'
+    xmlsecVersion = '1.4.4'
+    // testing
+    junitVersion = '4.13.2'
+}
+

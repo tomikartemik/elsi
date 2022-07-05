@@ -1,9 +1,18 @@
 <resources>
     <string name="app_name">Командор</string>
+    <string name="fcm_message">fcm_message</string>
+    <string name="default_notification_channel_id">001</string>
+    <string name="default_notification_channel_name">Comandor</string>
+    <string name="msg_token_fmt">%s msg_token_fmt</string>
+    <string name="msg_subscribed">msg_subscribed</string>
+    <string name="msg_subscribe_failed">msg_subscribe_failed</string>
+
 
     <string name="startInfoDescription">Безопасное общение с контрагентами</string>
     <string name="startInfoCertificateLoadInfo">Для продолжения работы</string>
-    <string name="startInfoCertificateLoadButton">загрузите сертификат</string>
+    <string name="startInfoCertificateLoadButtonAsZip">загрузите сертификат как архив</string>
+    <string name="startInfoCertificateLoadButtonAsFolder">загрузите сертификат как папку</string>
+
     <string name="startInfoGetCertificateButton">Получить сертификат ЭП</string>
     <string name="certListTitle">Выбор сертификата</string>
     <string name="noCertificates">Нет сертификатов</string>
@@ -66,4 +75,72 @@
     <string name="sign_is_not_verified_description">Подпись для этого файла неверна. Все равно сохранить файл?</string>
     <string name="save">Сохранить</string>
     <string name="no_save">Не сохранять</string>
+
+    <string name="internet_connection_error">No internet connection</string>
+    <string name="ContainerTab">Containers</string>
+    <string name="ExamplesTab">Examples</string>
+    <string name="SDKTestsTab">SDK tests</string>
+    <string name="SettingsTab">Settings</string>
+    <string name="UtilitiesTab">Utilities</string>
+
+    <string name="ContainerGenKeyPair">Create container (signature key)</string>
+    <string name="ContainerGenKeyPairDH">Create container (exchange key)</string>
+    <string name="ContainerChangePassAndCopy">Create container and change pin</string>
+    <string name="ContainerRemoveOneContainer">Delete container</string>
+    <string name="ContainerRemoveContainers">Delete all containers</string>
+    <string name="ContainerContainerName">Container:</string>
+    <string name="ContainerSelfSignedButton">Self-signed (limited use)</string>
+    <string name="ContainerCA14Button">MS CA</string>
+    <string name="ContainerCA15Button">CA 1.5</string>
+    <string name="ContainerCA20Button">CA 2.0 (default password: 123)</string>
+    <string name="ContainerContainerNameIsNull">An error occurred! Container alias not set.</string>
+    <string name="ContainerContainerNameExists">An error occurred! Container with this name already exists.</string>
+    <string name="ContainerContainerInvalidAlias">An error occurred! Key container name has invalid length or contains invalid chars.</string>
+    <string name="ContainerNewPasswordSet" formatted="false">Password has been changed: %s</string>
+    <string name="ContainerRequireRemoveContainer">Do you want to remove container(s)?</string>
+
+    <string name="ContainerMoveLabel">Copy container from:</string>
+    <string name="ContainerHint">Path to container</string>
+
+    <string name="titleRemovableReader">Removable reader:</string>
+
+    <string name="ShowLog">Log</string>
+    <string name="StatusField">Status</string>
+    <string name="StatusUnknown">unknown</string>
+    <string name="StatusOK">done</string>
+    <string name="StatusError">failed</string>
+    <string name="SettingsCopy">Copy</string>
+
+    <string name="SettingsKeyStoreType">Key store type:</string>
+    <string name="SettingsProviderType">Provider type:</string>
+    <string name="SettingsKeyAlgorithm">KeyAlgorithm:</string>
+
+    <string name="ExamplesExampleName">Example:</string>
+    <string name="ExamplesClientName">Client container:</string>
+    <string name="ExamplesClientPassword">Client password:</string>
+    <string name="ExamplesServerName">Recipient container:</string>
+    <string name="ExamplesServerPassword">Recipient password:</string>
+    <string name="ExamplesExecute">Execute</string>
+
+    <string name="TestsTestName">Test:</string>
+
+    <string name="ProgressDialogExecuting">Please wait&#8230;</string>
+
+    <string name="ExamplesInstallCAdESCAWarning">
+        You have chosen a CAdES example which requires CA certificates to being installed.
+        The special example %s will install the certificates. You can also install the
+        certificates using Settings > Security on your device. Press Execute to run
+        the example.
+    </string>
+
+    <string name="ExamplesAuthInstallCACAdES">Install CA certificates automatically</string>
+    <string name="ContainerAboutTestContainer" formatted="false">Container: %s, password: %s</string>
+
+    <!-- Wait progress bar -->
+    <string name="PBMessageWait">Please, wait&#8230;</string>
+    <string name="PBMessageAlreadyRunning">Please, wait, the task has already been run.</string>
+    <string name="or">или</string>
+    <string name="certificate_list_caption">Доступные сертификаты</string>
+    <string name="folders">Папки</string>
+
 </resources>
